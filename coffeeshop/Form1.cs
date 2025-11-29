@@ -116,5 +116,10 @@ namespace coffeeshop
                 comboBox2.SelectedItem = kostomer.SugarLevel;
             }
         }
+
+        private void akoNigah(){
+
+        Console.WriteLine("Kyle Gamay ug Otin");
+        }
     }
 }
