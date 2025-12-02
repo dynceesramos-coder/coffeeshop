@@ -42,6 +42,7 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -49,9 +50,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Gemini_Generated_Image_ju0p4pju0p4pju0p_removebg_preview;
-            pictureBox1.Location = new Point(483, -17);
+            pictureBox1.Location = new Point(690, -28);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(472, 381);
+            pictureBox1.Size = new Size(674, 635);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -60,9 +62,11 @@
             dataGridView1.BackgroundColor = Color.Sienna;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
-            dataGridView1.Location = new Point(42, 71);
+            dataGridView1.Location = new Point(78, 108);
+            dataGridView1.Margin = new Padding(4, 5, 4, 5);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(345, 119);
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.Size = new Size(493, 198);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellClick += dataGridView1_CellClick;
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
@@ -71,34 +75,42 @@
             // 
             Column1.DataPropertyName = "Name";
             Column1.HeaderText = "Name";
+            Column1.MinimumWidth = 8;
             Column1.Name = "Column1";
+            Column1.Width = 150;
             // 
             // Column2
             // 
             Column2.DataPropertyName = "Coffee";
             Column2.HeaderText = "Coffee";
+            Column2.MinimumWidth = 8;
             Column2.Name = "Column2";
+            Column2.Width = 150;
             // 
             // Column3
             // 
             Column3.DataPropertyName = "Sugar Level";
             Column3.HeaderText = "Sugar Level";
+            Column3.MinimumWidth = 8;
             Column3.Name = "Column3";
+            Column3.Width = 150;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(42, 248);
+            textBox1.Location = new Point(60, 413);
+            textBox1.Margin = new Padding(4, 5, 4, 5);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
+            textBox1.Size = new Size(141, 31);
             textBox1.TabIndex = 2;
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Caramel", "BLACK", "Pait Coffee" });
-            comboBox1.Location = new Point(42, 305);
+            comboBox1.Location = new Point(60, 508);
+            comboBox1.Margin = new Padding(4, 5, 4, 5);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(100, 23);
+            comboBox1.Size = new Size(141, 33);
             comboBox1.TabIndex = 3;
             comboBox1.Tag = "";
             comboBox1.Text = "Select Coffee";
@@ -107,45 +119,50 @@
             // 
             comboBox2.FormattingEnabled = true;
             comboBox2.Items.AddRange(new object[] { "25%", "50%", "75%", "100%" });
-            comboBox2.Location = new Point(41, 367);
+            comboBox2.Location = new Point(59, 612);
+            comboBox2.Margin = new Padding(4, 5, 4, 5);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(102, 23);
+            comboBox2.Size = new Size(144, 33);
             comboBox2.TabIndex = 4;
             comboBox2.Text = "Select Sugar Lvl";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(41, 224);
+            label1.Location = new Point(59, 373);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(69, 15);
+            label1.Size = new Size(104, 25);
             label1.TabIndex = 5;
             label1.Text = "Enter Name";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(42, 287);
+            label2.Location = new Point(60, 478);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(76, 15);
+            label2.Size = new Size(115, 25);
             label2.TabIndex = 6;
             label2.Text = "Select Coffee";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(41, 349);
+            label3.Location = new Point(59, 582);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(88, 15);
+            label3.Size = new Size(134, 25);
             label3.TabIndex = 7;
             label3.Text = "Select Sugar Lvl";
             // 
             // button1
             // 
             button1.BackColor = Color.Sienna;
-            button1.Location = new Point(41, 413);
+            button1.Location = new Point(59, 688);
+            button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(107, 38);
             button1.TabIndex = 8;
             button1.Text = "Enter ";
             button1.UseVisualStyleBackColor = false;
@@ -154,9 +171,10 @@
             // button2
             // 
             button2.BackColor = Color.Sienna;
-            button2.Location = new Point(43, 502);
+            button2.Location = new Point(61, 837);
+            button2.Margin = new Padding(4, 5, 4, 5);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(107, 38);
             button2.TabIndex = 9;
             button2.Text = "Edit";
             button2.UseVisualStyleBackColor = false;
@@ -165,20 +183,32 @@
             // button3
             // 
             button3.BackColor = Color.Sienna;
-            button3.Location = new Point(149, 502);
+            button3.Location = new Point(213, 837);
+            button3.Margin = new Padding(4, 5, 4, 5);
             button3.Name = "button3";
-            button3.Size = new Size(75, 23);
+            button3.Size = new Size(107, 38);
             button3.TabIndex = 10;
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = false;
             button3.MouseClick += button3_MouseClick;
             // 
+            // button4
+            // 
+            button4.Location = new Point(631, 771);
+            button4.Name = "button4";
+            button4.Size = new Size(112, 34);
+            button4.TabIndex = 11;
+            button4.Text = "Next ";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Bisque;
-            ClientSize = new Size(937, 537);
+            ClientSize = new Size(1339, 924);
+            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -190,6 +220,7 @@
             Controls.Add(textBox1);
             Controls.Add(dataGridView1);
             Controls.Add(pictureBox1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -215,5 +246,6 @@
         private DataGridViewTextBoxColumn Column3;
         private Button button2;
         private Button button3;
+        private Button button4;
     }
 }

@@ -20,6 +20,8 @@ namespace coffeeshop
         public Form1()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
             comboBox1.SelectedIndex = 0;
             comboBox2.SelectedIndex = 0;
         }
@@ -49,7 +51,8 @@ namespace coffeeshop
 
             var kostomer = dataGridView1.CurrentRow.DataBoundItem as Kostomer;
 
-            if (kostomer != null) {
+            if (kostomer != null)
+            {
 
                 textBox1.Text = kostomer.Name;
                 comboBox1.SelectedItem = kostomer.Coffee;
@@ -78,7 +81,7 @@ namespace coffeeshop
 
         private void dataGridView1_CellClick(object? sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -109,7 +112,8 @@ namespace coffeeshop
             if (dataGridView1.CurrentRow == null) return;
 
             var kostomer = dataGridView1.CurrentRow.DataBoundItem as Kostomer;
-            if (kostomer != null) {
+            if (kostomer != null)
+            {
 
                 textBox1.Text = kostomer.Name;
                 comboBox1.SelectedItem = kostomer.Coffee;
@@ -117,9 +121,17 @@ namespace coffeeshop
             }
         }
 
-        private void akoNigah(){
+        private void akoNigah()
+        {
 
-        Console.WriteLine("Kyle Gamay ug Otin");
+            Console.WriteLine("Kyle Gamay ug Otin");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form2 nextPage = new Form2();
+            nextPage.Show();
+            this.Hide();
         }
     }
 }
